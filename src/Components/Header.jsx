@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiMail } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
+import { FaBars } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
+
 
 const Header = () => {
+
+    let [menuShow, setMenuShow] = useState(false);
+
+    const handleMenu = () =>{
+        setMenuShow(!menuShow)
+
+    }
   return (
   <header className='bg-[#7E33E0] text-white py-3 font-josef'>
     <div className="container mx-auto">
@@ -21,8 +31,8 @@ const Header = () => {
                     <p>(12345)67890</p>
                 </div>
             </div>
-            <div className="">
-                <ul className='flex items-center gap-5'>
+            <div className="flex">
+                <ul className={`static lg:flex ${menuShow === false ? 'absolute -left-48': 'absolute left-1 top-10 bg-black w-1/2 h-full ' }`}>
                     <li className='flex it items-center gap-2'>
                     <select name="" id="" className='bg-transparent'>
                             <option className='bg-[#7E33E0]' value="">Eglish <FaAngleDown/></option>
@@ -40,7 +50,12 @@ const Header = () => {
                     <li className='flex it items-center gap-2'>Login <FaRegUser/></li>
                     <li className='flex it items-center gap-2'>Wishlist <CiHeart/> </li>
                     <li className='flex it items-center gap-2'><CiShoppingCart className='text-[25px]'/></li>
+                    
                 </ul>
+                <div onClick={handleMenu} className="mr-5 flex items-center lg:hidden">
+                    {menuShow === false ? <FaBars/> : <IoCloseSharp/>}       
+                </div>
+               
             </div>
         </div>
 

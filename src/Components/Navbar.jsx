@@ -23,11 +23,11 @@ const Navbar = () => {
                                 <li>Item-4</li>
                             </ul></Link>
                         </li>
-                        <li><Link to='/About'>About</Link></li>
-                        <li><Link to='/Blog'>Blog</Link></li>
-                        <li>Products</li>
-                        <li>Shop</li>
-                        <li>Contact</li>
+                        <li className='text-[#0D0E43]' ><Link to='/About'>About</Link></li>
+                        <li className='text-[#0D0E43]' ><Link to='/Blog'>Blog</Link></li>
+                        <li className='text-[#0D0E43]' >Products</li>
+                        <li className='text-[#0D0E43]' >Shop</li>
+                        <li className='text-[#0D0E43]' >Contact</li>
                     </ul>
                 </div>
                 <div className="flex items-center">

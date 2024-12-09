@@ -1,14 +1,18 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Navbar from '../Components/Navbar'
 import Hero from '../Components/Hero'
+import Feature from '../Components/Feature'
+import Leatest from '../Components/Leatest'
+import ShopexOffer from '../Components/ShopexOffer'
 
 const Home = () => {
   return (
     <div>
       <Hero/>
+      <Feature/>
+      <Leatest/>
+      <ShopexOffer/>
     </div>
   )
-}
+} 
 
 export default Home
