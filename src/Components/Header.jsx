@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import { CiMail } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
@@ -32,7 +33,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="flex">
-                <ul className={`static lg:flex ${menuShow === false ? 'absolute -left-48': 'absolute left-1 top-10 bg-black w-1/2 h-full ' }`}>
+                <ul className={`lg:static flex lg:flex-row flex-col gap-3 lg:gap-9 text-black lg:text-white ${menuShow === false ? 'absolute -left-48': 'absolute left-0 top-12 py-3 px-3 bg-orange-300 w-1/2 h-full'}`}>
                     <li className='flex it items-center gap-2'>
                     <select name="" id="" className='bg-transparent'>
                             <option className='bg-[#7E33E0]' value="">Eglish <FaAngleDown/></option>
