@@ -1,10 +1,10 @@
 import React from 'react'
-import Abouts from '../Components/Abouts'
+import PageHeading from '../Components/PageHeading'
 
 const About = () => {
   return (
     <div>
-        <Abouts/>
+        <PageHeading heading='About US' pageName='About Us'/>
     </div>
   )
 }
