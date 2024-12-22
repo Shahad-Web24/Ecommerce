@@ -13,6 +13,7 @@ export default {
       },
       colors: {
         'Common': '#FB2E86',
+        'semiCommon': '#151875'
       },
       boxShadow: {
         'Shadow': '*/-webkit-box-shadow: -4px 5px 37px 8px rgba(0, 0, 0, 0.37);-moz-box-shadow: -4px 5px 37px 8px rgba(0, 0, 0, 0.37);box-shadow: -4px 5px 37px 8px rgba(0, 0, 0, 0.37);'

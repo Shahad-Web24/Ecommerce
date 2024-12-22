@@ -26,8 +26,8 @@ const Navbar = () => {
                         <li className='text-[#0D0E43]' ><Link to='/About'>About</Link></li>
                         <li className='text-[#0D0E43]' ><Link to='/Blog'>Blog</Link></li>
                         <li className='text-[#0D0E43]' >Products</li>
-                        <li className='text-[#0D0E43]' >Shop</li>
-                        <li className='text-[#0D0E43]' >Contact</li>
+                        <li className='text-[#0D0E43]' ><Link to='/Shop'>Shop</Link></li>
+                        <li className='text-[#0D0E43]' ><Link to='/Contact'>Contact</Link></li>
                     </ul>
                 </div>
                 <div className="flex items-center">
