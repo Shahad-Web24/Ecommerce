@@ -25,7 +25,7 @@ const Navbar = () => {
                         </li>
                         <li className='text-[#0D0E43]' ><Link to='/About'>About</Link></li>
                         <li className='text-[#0D0E43]' ><Link to='/Blog'>Blog</Link></li>
-                        <li className='text-[#0D0E43]' >Products</li>
+                        <li className='text-[#0D0E43]' ><Link to='/Cart'>Products</Link></li>
                         <li className='text-[#0D0E43]' ><Link to='/Shop'>Shop</Link></li>
                         <li className='text-[#0D0E43]' ><Link to='/Contact'>Contact</Link></li>
                     </ul>

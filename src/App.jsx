@@ -7,6 +7,8 @@ import RootLayout from './Components/RootLayout';
 import Blog from './Pages/Blog';
 import Shop from './Pages/Shop';
 import Contact from './Pages/Contact';
+import Error from './Pages/Error';
+import Cart from './Pages/Cart';
 
 function App() {
 
@@ -17,6 +19,9 @@ function App() {
       <Route path='/Blog' element={<Blog/>}/>
       <Route path='/Shop' element={<Shop/>}/>
       <Route path='/Contact' element={<Contact/>}/>
+      <Route path='*' element={<Error/>}/>
+      <Route path='/Cart' element={<Cart/>}/>
+
 
     </Route> 
   ))
