@@ -8,6 +8,7 @@ import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -50,7 +51,7 @@ const Header = () => {
                         </li>
                     <li className='flex it items-center gap-2'>Login <FaRegUser/></li>
                     <li className='flex it items-center gap-2'>Wishlist <CiHeart/> </li>
-                    <li className='flex it items-center gap-2'><CiShoppingCart className='text-[25px]'/></li>
+                    <li className='flex it items-center gap-2'><Link to='/Cart'><CiShoppingCart className='text-[25px]'/></Link></li>
                     
                 </ul>
                 <div onClick={handleMenu} className="mr-5 flex items-center lg:hidden">
